@@ -7,9 +7,7 @@ lib_cdn: "https://cdn.rawgit.com/ramnathv/slidifyLibraries/master/inst/libraries
 output: md_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, fig.align="center")
-```
+
 
 ## Introduction
 
@@ -30,10 +28,13 @@ This presentation will address the following:
 The application generates a matrix of random bits with Gaussian distribution and outputs them in 
 a heatmap plot. Here's a sample matrix of size `4 * 4`:
 
-```{r matrix}
-noise <- (rnorm(4 * 4) > 0)
-noise <- as.numeric(noise)
-matrix(noise, nrow = 4, ncol = 4)
+
+```
+##      [,1] [,2] [,3] [,4]
+## [1,]    1    1    0    1
+## [2,]    1    0    1    0
+## [3,]    0    1    0    1
+## [4,]    1    0    1    1
 ```
 
 ---
