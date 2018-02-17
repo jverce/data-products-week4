@@ -8,6 +8,7 @@
 #
 
 library(shiny)
+library(markdown)
 library(plotly)
 
 
@@ -29,6 +30,7 @@ shinyUI(fluidPage(
     
     # Show a plot of the generated distribution
     mainPanel(
+      includeMarkdown("doc.md"),
        plotlyOutput("distPlot")
     )
   )
