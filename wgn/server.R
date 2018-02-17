@@ -22,7 +22,10 @@ shinyServer(function(input, output) {
       as.numeric() %>%
       matrix(nrow = n, ncol = n)
     )
+    
+    # plot the heatmap
     plot_ly(z = noise, type = "heatmap", colors = c("black", "white"))
+    
   })
   
 })
