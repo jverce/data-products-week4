@@ -21,7 +21,7 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
        sliderInput("n",
-                   "Number of bits (NxN)",
+                   "N",
                    min = 2,
                    max = 64,
                    value = 8)
